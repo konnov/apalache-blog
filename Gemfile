@@ -19,11 +19,11 @@ gem "github-pages", "~> 204", group: :jekyll_plugins
 
 gem "jekyll-remote-theme"
 
-#gem "jekyll-theme-architect", "~> 0.1.1"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.13.0"
+  gem "jemoji"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
