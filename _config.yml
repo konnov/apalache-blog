@@ -39,6 +39,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
+  - jemoji
 
 remote_theme: yous/whiteglass
 
