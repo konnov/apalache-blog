@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Apalache release 0.6.0!"
+date:   2020-02-16 23:0:00 +0100
+tags:
+ - tla
+ - apalache
+ - modelchecking
+ - release
+keywords: tla apalache modelchecking
+---
+
+We have just released [version 0.6.0][apalache-0.6.0] of the Apalache model
+checker for [TLA+][tla]. Over the last six months, we have been refactoring the
+tool to make the whole translation to SMT cleaner and more efficient. The new
+features can be found in [CHANGELOG][release-changelog]. As we have found from
+the performance benchmarks, the new release is much better at [bounded model
+checking][bmc] and proving [inductive invariants][indinv].
+
+For the first time, we have issued the [user manual][apalache-manual]. It is
+probably far from perfect, but it is a start! We also tried to make the tool as
+easy to install as possible, so now you can just pull a [docker
+image][apalache-docker] and run the model checker, the details are in the
+[manual][manual-docker].
+
+Github statistics show that there is a lot of interest in the manual, but few
+people go beyond the manual page and try the tool. I believe that we need
+good examples to demonstrate the value of [TLA+][tla] in general and to explain
+the value of [Apalache][apalache-0.6.0].
+
+Check this blog for the upcoming examples of how one can specify distributed
+algorithms with [TLA+][tla] and exercise them with [TLC][tlc] and
+[Apalache][apalache-0.6.0].
+
+
+[apalache-0.6.0]: https://github.com/konnov/apalache/releases/tag/v0.6.0
+[apalache-manual]: https://github.com/konnov/apalache/blob/v0.6.0/docs/manual.md
+[apalache-docker]: https://hub.docker.com/r/apalache/mc
+[manual-docker]: https://github.com/konnov/apalache/blob/v0.6.0/docs/manual.md#useDocker
+[release-changelog]: https://github.com/konnov/apalache/blob/v0.6.0/CHANGES.md
+[indinv]: https://github.com/konnov/apalache-tests/blob/master/results/001indinv-report.md
+[bmc]: https://github.com/konnov/apalache-tests/blob/master/results/002bmc-report.md
+[tla]: https://lamport.azurewebsites.net/tla/tla.html
+[tlc]: https://lamport.azurewebsites.net/tla/tools.html
+
